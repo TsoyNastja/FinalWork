@@ -27,5 +27,17 @@ string[] inputArray(){
 }
 
 
+void work(string[] array){
+    Console.WriteLine("Элементы имеющие 3 и менее символов:");
+    for(int i = 0; i<array.Length; i++){
+        if(array[i].Length <= 3){
+            Console.Write($"{array[i]} ");
+        } 
+    }
+}
+
+
+
 string[] srcArray = inputArray();
 ShowArray(srcArray, "Исходный массив");
+work(srcArray);
